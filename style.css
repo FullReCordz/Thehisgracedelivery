@@ -1,0 +1,96 @@
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family:'Inter',sans-serif;
+  background:radial-gradient(1200px 600px at top,#111827,#020617);
+  color:#e5e7eb;
+  overflow-x:hidden
+}
+
+header{
+  position:fixed;top:0;width:100%;z-index:1000;
+  padding:18px 20px;
+  backdrop-filter:blur(14px);
+  background:rgba(2,6,23,.7)
+}
+header .wrap{
+  max-width:1100px;margin:auto;
+  display:flex;align-items:center;justify-content:space-between
+}
+header strong{font-size:18px;font-weight:800}
+nav a{margin-left:18px;text-decoration:none;color:#cbd5f5}
+nav a.cta{
+  padding:10px 18px;border-radius:999px;
+  background:linear-gradient(135deg,#ff7a18,#ffb347);
+  color:#020617;font-weight:700
+}
+
+.hero{
+  min-height:100vh;
+  display:flex;align-items:center;justify-content:center;
+  text-align:center;
+  padding:140px 18px 80px;
+  background:
+    radial-gradient(600px 300px at 20% 10%,rgba(255,122,24,.25),transparent),
+    radial-gradient(600px 300px at 80% 20%,rgba(255,179,71,.25),transparent);
+}
+
+.hero h1{
+  font-size:clamp(34px,7vw,64px);
+  font-weight:900;margin-bottom:18px
+}
+.hero p{max-width:720px;margin:auto;color:#cbd5f5}
+.hero a{
+  display:inline-block;margin-top:34px;
+  padding:16px 34px;border-radius:999px;
+  background:linear-gradient(135deg,#ff7a18,#ffb347);
+  color:#020617;font-weight:800;text-decoration:none
+}
+
+section{max-width:1100px;margin:auto;padding:80px 18px}
+h2{text-align:center;font-weight:900;margin-bottom:18px}
+
+.grid{
+  display:grid;gap:24px;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr))
+}
+
+.card{
+  background:#020617;
+  border-radius:22px;
+  padding:26px;
+  border:1px solid rgba(148,163,184,.15)
+}
+
+.image-grid img{
+  width:100%;
+  border-radius:24px;
+  box-shadow:0 30px 80px rgba(0,0,0,.6)
+}
+
+.highlight{
+  margin:90px 18px;
+  padding:80px 20px;
+  text-align:center;
+  border-radius:30px;
+  background:linear-gradient(135deg,#ff7a18,#ffb347);
+  color:#020617
+}
+
+form input,form textarea{
+  width:100%;padding:14px;margin-bottom:14px;
+  border-radius:14px;border:none;
+  background:#020617;color:#fff
+}
+
+form button{
+  width:100%;padding:16px;border-radius:999px;
+  border:none;font-weight:800;
+  background:linear-gradient(135deg,#ff7a18,#ffb347)
+}
+
+footer{text-align:center;padding:50px;color:#94a3b8}
+
+@media(max-width:600px){
+  nav{display:none}
+  header .wrap{justify-content:center}
+}
