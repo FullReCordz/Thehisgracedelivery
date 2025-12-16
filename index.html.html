@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>His Grace Delivery | STAT Courier</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{
+      font-family:'Inter',sans-serif;
+      background:radial-gradient(1200px 600px at top,#111827,#020617);
+      color:#e5e7eb;
+      overflow-x:hidden
+    }
+
+    header{
+      position:fixed;top:0;width:100%;z-index:1000;
+      padding:18px 20px;
+      backdrop-filter:blur(14px);
+      background:rgba(2,6,23,.7)
+    }
+    header .wrap{
+      max-width:1100px;margin:auto;
+      display:flex;align-items:center;justify-content:space-between
+    }
+    header strong{font-size:18px;font-weight:800;letter-spacing:.4px}
+    nav a{
+      margin-left:18px;text-decoration:none;color:#cbd5f5;font-weight:500
+    }
+    nav a.cta{
+      padding:10px 18px;border-radius:999px;
+      background:linear-gradient(135deg,#ff7a18,#ffb347);
+      color:#020617;font-weight:700
+    }
+
+    .hero{
+      min-height:100vh;
+      display:flex;align-items:center;justify-content:center;
+      text-align:center;
+      padding:140px 18px 80px;
+      background:
+        radial-gradient(600px 300px at 20% 10%,rgba(255,122,24,.25),transparent),
+        radial-gradient(600px 300px at 80% 20%,rgba(255,179,71,.25),transparent),
+        url('https://images.unsplash.com/photo-1582719478250-c89cae4dc85b');
+      background-size:cover;background-position:center
+    }
+    .hero h1{
+      font-size:clamp(34px,7vw,64px);
+      font-weight:900;line-height:1.05;
+      margin-bottom:18px
+    }
+    .hero p{
+      max-width:720px;margin:auto;
+      font-size:clamp(15px,3.8vw,18px);
+      color:#cbd5f5
+    }
+    .hero a{
+      display:inline-block;margin-top:34px;
+      padding:16px 34px;border-radius:999px;
+      background:linear-gradient(135deg,#ff7a18,#ffb347);
+      color:#020617;text-decoration:none;font-weight:800;
+      box-shadow:0 20px 60px rgba(255,122,24,.35)
+    }
+
+    section{
+      max-width:1100px;margin:auto;
+      padding:80px 18px
+    }
+    section h2{
+      font-size:clamp(26px,6vw,42px);
+      font-weight:900;text-align:center;margin-bottom:18px
+    }
+    section > p{
+      text-align:center;max-width:760px;margin:0 auto 50px;
+      color:#94a3b8;font-size:16px
+    }
+
+    .grid{
+      display:grid;gap:24px;
+      grid-template-columns:repeat(auto-fit,minmax(240px,1fr))
+    }
+    .card{
+      background:linear-gradient(180deg,#020617,#020617);
+      border:1px solid rgba(148,163,184,.15);
+      border-radius:22px;padding:26px;
+      box-shadow:0 30px 80px rgba(2,6,23,.7)
+    }
+    .card h3{font-size:18px;font-weight:700;margin-bottom:8px}
+    .card p{color:#94a3b8;font-size:14px}
+
+    .highlight{
+      margin:90px 18px;
+      border-radius:30px;
+      padding:80px 20px;
+      text-align:center;
+      background:linear-gradient(135deg,#ff7a18,#ffb347);
+      color:#020617
+    }
+    .highlight h2{margin-bottom:12px}
+    .highlight a{
+      display:inline-block;margin-top:20px;
+      padding:16px 36px;border-radius:999px;
+      background:#020617;color:#fff;text-decoration:none;font-weight:800
+    }
+
+    .contact{
+      display:grid;gap:40px
+    }
+    .contact p{color:#cbd5f5;margin-bottom:8px}
+    form input,form textarea{
+      width:100%;padding:14px 16px;margin-bottom:14px;
+      border-radius:14px;border:none;
+      background:#020617;color:#e5e7eb
+    }
+    form button{
+      width:100%;padding:16px;border-radius:999px;border:none;
+      background:linear-gradient(135deg,#ff7a18,#ffb347);
+      color:#020617;font-weight:800;font-size:16px
+    }
+
+    footer{
+      padding:50px 18px;text-align:center;
+      background:#020617;color:#94a3b8
+    }
+    footer p{margin:6px 0;font-size:14px}
+
+    @media(max-width:600px){
+      nav{display:none}
+      header .wrap{justify-content:center}
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <strong>His Grace Delivery</strong>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#stat">STAT</a>
+      <a href="#contact" class="cta">Request STAT</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div>
+    <h1>Moving with Purpose.<br>Delivering with Grace.</h1>
+    <p><strong>Hisgrace Delivery.</strong> Reliable STAT and medical courier services built for speed, trust, and care.</p>
+    <a href="#contact">Request Immediate Dispatch</a>
+  </div>
+</section>
+
+<section id="stat">
+  <h2>STAT Delivery Services</h2>
+  <p>Everything about STAT deliveries is handled with priority, accuracy, and urgency. Immediate dispatch, real‑time coordination, and professional handling from pickup to drop‑off.</p>
+</section>
+
+<section>
+  <h2>Certifications & Compliance</h2>
+  <div class="grid">
+    <div class="card"><h3>Bloodborne Pathogens Certified</h3><p>Trained and certified for sensitive medical materials.</p></div>
+    <div class="card"><h3>HIPAA Certified</h3><p>Strict privacy and compliance standards maintained.</p></div>
+  </div>
+</section>
+
+<section>
+  <div class="grid" style="margin-bottom:60px">
+    <img src="https://image2url.com/images/1765883087111-c0a9afd4-77c3-4467-8f38-99c93523a6d8.png" style="width:100%;border-radius:24px;box-shadow:0 30px 80px rgba(0,0,0,.6)" alt="Medical Courier Services">
+    <img src="https://images.unsplash.com/photo-1579154204601-01588f351e67" style="width:100%;border-radius:24px;box-shadow:0 30px 80px rgba(0,0,0,.6)" alt="Medical Logistics">
+  </div>
+</section>
+
+<section id="services">
+  <h2>Our Services</h2>
+  <div class="grid">
+    <div class="card"><h3>STAT Deliveries</h3><p>Immediate response for critical shipments.</p></div>
+    <div class="card"><h3>Medical Courier</h3><p>Secure and compliant medical transport.</p></div>
+    <div class="card"><h3>Same‑Day Delivery</h3><p>Fast solutions for urgent schedules.</p></div>
+    <div class="card"><h3>Scheduled Runs</h3><p>Reliable routes and planned dispatch.</p></div>
+  </div>
+</section>
+
+<section class="highlight">
+  <h2>Need a STAT Delivery Now?</h2>
+  <p>Immediate priority dispatch available.</p>
+  <a href="#contact">Request STAT</a>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <div class="contact">
+    <div>
+      <p><strong>Service Area:</strong> Texas and surrounding areas</p>
+      <p><strong>Email:</strong> thehisgracedelivery@gmail.com</p>
+      <p><strong>Certifications:</strong> Bloodborne Pathogens Certified • HIPAA Certified</p>
+    </div>
+    <form action="https://formspree.io/f/xzznqjzo" method="POST">
+      <input type="hidden" name="_subject" value="New STAT Delivery Request">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <input type="tel" name="phone" placeholder="Phone Number">
+      <textarea name="message" rows="5" placeholder="STAT Delivery Details"></textarea>
+      <button type="submit">Submit Request</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <p><strong>His Grace Delivery</strong></p>
+  <p>STAT & Medical Courier Services</p>
+  <p>thehisgracedelivery@gmail.com</p>
+  <p>Texas & Surrounding Areas</p>
+</footer>
+
+</body>
+</html>
